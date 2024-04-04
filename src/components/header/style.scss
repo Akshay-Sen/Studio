@@ -1,61 +1,202 @@
-@import "../../mixins.scss";
-*{
+// @import "../../mixins.scss";
+
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+
+// .header { 
+//     width: 100%;
+//     height: 4rem;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     background-color:white;
+//     box-shadow: 3px 3px 3px 3px #ddd;
+//     .logo {
+//         margin-left: 10%;
+//         img {
+//             width: 4.5rem;
+//             // background-color: #fff;
+//         }
+//     }
+//     .menu-bar{
+//         padding: 6px 5%;
+//         font-size: 30px;
+//         font-weight: 900;
+//         color: black;
+//         cursor: pointer;
+//         @include md {
+//             display: none;
+//         }
+
+//     }
+// }
+// .navbar {
+//     height: 3rem;
+//     width: 50%;
+//     margin-right: 7%;
+//     display: none;
+//     @include md {
+//         display: block;
+//     }
+
+// }
+// ul{
+//     display: flex;
+//     justify-content: space-around;
+//     list-style: none;
+//     align-items: center;
+//     gap: 5px;
+
+//     a {
+//         text-decoration: none;
+//         font-size: 1.4rem;
+//         font-weight: 600;
+//         color: black;
+//         font-family: sans-serif;
+//     }
+// }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fcfcfc;
 }
-.header { 
+
+.container-1 {
+    //   max-width: 1100px;
     width: 100%;
-    height: 4rem;
+    margin: 0 auto;
+    // padding: 0 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // background-color:white;
-    // box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
-    transform: translateY(0);
-    z-index: 2;
-    
-    .logo {
-        margin-left: 10%;
-        img {
-            width: 4.5rem;
-            // background-color: #fff;
-        }
-    }
-    .menu-bar{
-        padding: 6px 5%;
-        font-size: 30px;
-        font-weight: 900;
-        color: black;
-        cursor: pointer;
-        @include md {
-            display: none;
-        }
-       
-    }
-}
-.navbar {
-    height: 3rem;
-    width: 50%;
-    margin-right: 7%;
-    display: none;
-    @include md {
-        display: block;
-    }
-    
-}
-ul{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    align-items: center;
-    gap: 5px;
+    height: 100%;
+    padding: 0 8%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 3px 3px 3px 3px #ddd;
 
-    a {
-        text-decoration: none;
-        font-size: 1.4rem;
-        font-weight: 600;
-        color: black;
-        font-family: sans-serif;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #fff;
+    position: relative;
+}
+
+.logo {
+}
+
+.logo img {
+    width: 7rem;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+}
+
+.nav-elements {
+    // display: flex;
+    // align-items: center;
+}
+
+.nav-elements ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    //   list-style-type: none;
+    list-style: none;
+}
+
+.nav-elements ul li:not(:last-child) {
+    margin-right: 60px;
+}
+
+.nav-elements ul a {
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-elements ul a.active {
+//   color: #574c4c;
+  color: rgb(243, 32, 145);
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-elements ul a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(243, 32, 145);
+}
+
+@media (max-width: 768px) {
+    .nav-elements ul li:not(:last-child) {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-elements {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background-color: #fff;
+        width: 0%;
+        height: calc(100vh - 60px);
+        // height: 100vh;
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+
+    }
+
+    .nav-elements.active {
+        width: 100%;
+    }
+
+    .nav-elements ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-right: 60px;
+        
+    }
+
+    .nav-elements ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .nav-elements ul li a{
+        font-size: 1.5rem;
+    }
+
+    .logo img {
+        width: 5rem;
     }
 }
