@@ -16,7 +16,7 @@ function Home() {
     <div className='home'>
 
     <div className="whatsapp">
-      <a href="https://wa.me/918889715148?text=Hii, Welcome to kelwa studio." target='_blank'>
+      <a href="https://wa.me/918889715148" target='_blank'>
         <img src={whatsapp_logo} alt="" />
       </a>
     </div>
