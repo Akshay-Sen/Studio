@@ -2,22 +2,26 @@
 
 .banner-img {
     height: 100vh;
-    background-image: url('../../assets/wed-banner1.jpg');
+    background-image: url('../../assets/wed-banner1.1.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     margin-block: 30px;
     @include md {
         background-position: center;
+        background-image: url('../../assets/wed-banner1.jpg');
     }
     h4 {
         height: 100vh;
-        font-size: 4rem;
+        font-size: 3rem;
         color: #fff;
         font-family: serif;
         display: flex;
         justify-content: center;
         align-items: center;
+        @include md{
+            font-size: 4rem;
+        }
     }
 }
 .projects, .videos{
@@ -60,8 +64,12 @@
     }
 }
 .wed {
-    background-image: url("../../assets/wed-img4.jpeg");
+    background-image: url("../../assets/wed-desktop1.jpg");
     background-size: cover;
+    @include md {
+    background-image: url("../../assets/wed-img4.jpeg");
+    // background-image: url("../../assets/wed-desktop2.jpg");
+    }
 }
 .films {
     background-size: cover;
