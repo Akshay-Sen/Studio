@@ -4,9 +4,7 @@ import whatsapp_logo from '../../assets/whatsapp.webp'
 import Services from '../services/Services'
 import Wedding from '../wedding/Wedding'
 import Gallery from '../gallery/Gallery'
-// import corousel1 from "../../assets/c3.webp"
-// import corousel2 from "../../assets/w2.jpg"
-// import corousel3 from "../../assets/c4.jpg"
+
 
 
 
@@ -43,7 +41,6 @@ function Home() {
   </button>
 </div>
     </div>
-
     <Services />
     <Wedding />
     <Gallery />
