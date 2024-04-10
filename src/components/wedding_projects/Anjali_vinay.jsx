@@ -3,24 +3,24 @@ import './style.scss'
 // import Gallery from '../gallery/Gallery'
 import img1 from '../../assets/img1.jpg'
 import img2 from '../../assets/img2.jpg'
-import img3 from '../../assets/p15.png'
-import img4 from '../../assets/p16.jpg'
+import img3 from '../../assets/img3.jpg'
+import img4 from '../../assets/img4.jpeg'
 import img5 from '../../assets/img5.jpg'
-import img6 from '../../assets/p17.jpg'
-import img7 from '../../assets/p18.webp'
+import img6 from '../../assets/img6.jpg'
+import img7 from '../../assets/c3c.jpg'
 import img8 from '../../assets/p5.jpg'
 import img9 from '../../assets/p6.jpg'
-import img10 from '../../assets/p19.jpg'
+import img10 from '../../assets/p7.jpg'
 import img11 from '../../assets/p8.webp'
 import img12 from '../../assets/p9.jpg'
-import img13 from '../../assets/p20.webp'
+import img13 from '../../assets/p10.jpg'
 import img14 from '../../assets/p11.jpg'
 import img15 from '../../assets/p12.jpg'
 import img16 from '../../assets/p13.jpg'
 import img17 from '../../assets/p14.jpg'
 
 
-function Arpita_ashu() {
+function Anjali_vinay() {
 
     let data = [
         {
@@ -96,11 +96,11 @@ function Arpita_ashu() {
     return (
         <div>
             <div className="Project">
-                <div className="main-img arpita">
+                <div className="main-img anjali">
                     {/* <img src={project1} alt="" /> */}
                 </div>
                 <div className="partner">
-                    <span> Arpita & Ashutosh </span>
+                    <span> Anjali & Vinay </span>
                 </div>
             </div>
             {/* <Gallery /> */}
@@ -120,4 +120,4 @@ function Arpita_ashu() {
     )
 }
 
-export default Arpita_ashu
+export default Anjali_vinay

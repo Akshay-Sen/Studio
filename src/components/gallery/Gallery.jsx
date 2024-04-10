@@ -108,7 +108,7 @@ function Gallery() {
 
     <div className={model? "model open" : "model"}>
       <img src={tempImg} alt="" />
-      <GrClose onClick={() => {setModel(false)}} />
+      <GrClose onClick={() => setModel(false)} />
     </div>
 
     <div className='container'>

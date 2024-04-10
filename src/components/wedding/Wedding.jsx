@@ -82,31 +82,44 @@ function Wedding() {
 
                 <div className="projects part-1">
                     <div className="work">
+                        <Link to= 'projects/wedding/sonu-ashish'>
                         <img src={img1} alt="" />
-                        <span>Sonu & Ravi</span>
+                        <span>Sonu & Ashish</span>
+                        </Link>
                     </div>
                     <div className="work">
+                    <Link to= 'projects/wedding/sanchi-gopal'>
                         <img src={img2} alt="" />
-                        <span>Neelu & Piyush</span>
+                        <span>Sanchi & Gopal</span>
+                        </Link>
                     </div>
                     <div className="work">
+                    
+                    <Link to= 'projects/wedding/jyoti-manoj'>
                         <img src={img3} alt="" />
-                        <span>Prity & Hemant</span>
+                        <span>Jyoti & Manoj</span>
+                        </Link>
                     </div>
                 </div>
 
                 <div className="projects part-2">
                     <div className="work">
+                        <Link to= 'projects/wedding/ritu-abhishek'>
                         <img src={img4} alt="" />
-                        <span>Tina & Anil</span>
+                        <span>Ritu & Abhishek</span>
+                        </Link>
                     </div>
                     <div className="work">
+                        <Link to= 'projects/wedding/monika-sandeep'>
                         <img src={img5} alt="" />
-                        <span>Payal & Pawan</span>
+                        <span>Monika & Sandeep</span>
+                        </Link>
                     </div>
                     <div className="work">
+                        <Link to= 'projects/wedding/anjali-vinay'>
                         <img src={img6} alt="" />
-                        <span>Ashu & Arpita</span>
+                        <span>Anjali & Vinay</span>
+                        </Link>
                     </div>
                 </div>
             </div>
