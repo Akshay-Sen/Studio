@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './style.scss'
+import { GrClose } from "react-icons/gr";
 
 import img1 from '../../assets/img1.jpg'
 import img2 from '../../assets/img2.jpg'
@@ -94,14 +95,29 @@ function Gallery() {
     },
   ]
 
+  const [model, setModel] = useState(false)
+  const [tempImg, setTempImg] = useState('')
+
+  const getImg = (imgSrc) => {
+    setTempImg (imgSrc);
+    setModel(true);
+  }
+
   return (
+    <>
+
+    <div className={model? "model open" : "model"}>
+      <img src={tempImg} alt="" />
+      <GrClose onClick={() => {setModel(false)}} />
+    </div>
+
     <div className='container'>
     <h1>Image Gallery</h1>
     <div className='gallery'>
       {
         data.map((item, index) => {
           return (
-            <div className="pics" key={index}>
+            <div className="pics" key={index} onClick={()=> getImg(item.imgSrc)}>
               <img src={item.imgSrc} style={{width : '100%'}} />
             </div>
           )
@@ -109,7 +125,9 @@ function Gallery() {
       }
     </div>
     </div>
+    </>
   )
 }
+
 
 export default Gallery
