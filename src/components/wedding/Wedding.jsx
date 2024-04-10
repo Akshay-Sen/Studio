@@ -82,20 +82,20 @@ function Wedding() {
 
                 <div className="projects part-1">
                     <div className="work">
-                        <Link to= 'projects/wedding/sonu-ashish'>
+                        <Link to= 'projects/wedding/sonu-ashish' target='_top' >
                         <img src={img1} alt="" />
                         <span>Sonu & Ashish</span>
                         </Link>
                     </div>
                     <div className="work">
-                    <Link to= 'projects/wedding/sanchi-gopal'>
+                    <Link to= 'projects/wedding/sanchi-gopal' target='_top' >
                         <img src={img2} alt="" />
                         <span>Sanchi & Gopal</span>
                         </Link>
                     </div>
                     <div className="work">
                     
-                    <Link to= 'projects/wedding/jyoti-manoj'>
+                    <Link to= 'projects/wedding/jyoti-manoj' target='_top' >
                         <img src={img3} alt="" />
                         <span>Jyoti & Manoj</span>
                         </Link>
@@ -104,19 +104,19 @@ function Wedding() {
 
                 <div className="projects part-2">
                     <div className="work">
-                        <Link to= 'projects/wedding/ritu-abhishek'>
+                        <Link to= 'projects/wedding/ritu-abhishek' target='_top' >
                         <img src={img4} alt="" />
                         <span>Ritu & Abhishek</span>
                         </Link>
                     </div>
                     <div className="work">
-                        <Link to= 'projects/wedding/monika-sandeep'>
+                        <Link to= 'projects/wedding/monika-sandeep' target='_top' >
                         <img src={img5} alt="" />
                         <span>Monika & Sandeep</span>
                         </Link>
                     </div>
                     <div className="work">
-                        <Link to= 'projects/wedding/anjali-vinay'>
+                        <Link to= 'projects/wedding/anjali-vinay' target='_top' >
                         <img src={img6} alt="" />
                         <span>Anjali & Vinay</span>
                         </Link>
