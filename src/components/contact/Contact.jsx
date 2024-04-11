@@ -32,7 +32,6 @@ function Contact() {
             <div className="text">
               <h3>Phone</h3>
               {/* <p>700-072-7819</p> */}
-              {/* <input type="tel" /> */}
               <a href="tel:+91 888 9715 148">+91 888 9715 148</a>
             </div>
           </div>
@@ -43,7 +42,8 @@ function Contact() {
             </div>
             <div className="text">
               <h3>Email</h3>
-              <p>kelwastudio@gmail.com</p>
+              {/* <p>kelwastudio@gmail.com</p> */}
+              <a href="mailto:akshaysen6150@gmail.com">kelwastudio@gmail.com</a>
             </div>
           </div>
         </div>
