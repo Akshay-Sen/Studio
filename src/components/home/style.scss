@@ -58,7 +58,8 @@
     img{
             width : 60px;
             position : fixed; 
-            bottom : 0px; 
+            bottom : 30px; 
+            left: 5px;
             z-index: 1000;
         @include md{
             bottom : 10px; 
