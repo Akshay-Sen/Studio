@@ -8,7 +8,8 @@ function Footer() {
     <>
       <div className="footer">
       <hr />
-        <p>Copyright 2024 Kelwa Studio </p>
+      {/* © 2012-2024 CandidShutters, All Rights Reserved. */}
+        <p>Copyright 2024 Kelwa Studio, All Rights Reserved. </p>
       </div>
     </>
   )

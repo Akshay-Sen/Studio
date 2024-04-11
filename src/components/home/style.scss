@@ -59,8 +59,9 @@
             width : 60px;
             position : fixed; 
             bottom : 0px; 
+            z-index: 1000;
         @include md{
-            bottom : 30px; 
+            bottom : 10px; 
             left:20px;
         }
     }
