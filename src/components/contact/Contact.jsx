@@ -31,7 +31,9 @@ function Contact() {
             </div>
             <div className="text">
               <h3>Phone</h3>
-              <p>700-072-7819</p>
+              {/* <p>700-072-7819</p> */}
+              {/* <input type="tel" /> */}
+              <a href="tel:+91 888 9715 148">+91 888 9715 148</a>
             </div>
           </div>
 
