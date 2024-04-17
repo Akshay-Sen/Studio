@@ -63,6 +63,9 @@
                 border-radius: 50%;
                 font-size: 22px;
                 box-shadow: 3px 3px 3px 3px #ddd;
+                a{
+                color: black;
+                }
             }
             .text{
                 display: flex;
@@ -76,6 +79,9 @@
                 a{
                     text-decoration: none;
                     color: black;
+                }
+                a:hover{
+                    color: gray;
                 }
             }
         }

@@ -27,7 +27,8 @@ function Contact() {
 
           <div className="info">
             <div className="icon">
-              <FaPhoneAlt />
+            <a href="tel:+91 888 9715 148"><FaPhoneAlt /></a>
+              
             </div>
             <div className="text">
               <h3>Phone</h3>
@@ -38,7 +39,7 @@ function Contact() {
 
           <div className="info">
             <div className="icon">
-              <MdEmail />
+            <a href="mailto:akshaysen6150@gmail.com"><MdEmail /></a>
             </div>
             <div className="text">
               <h3>Email</h3>
