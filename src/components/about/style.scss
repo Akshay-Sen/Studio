@@ -1,0 +1,73 @@
+@import "../../mixins.scss";
+.about,.studio{
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    flex-wrap: wrap;
+    padding: 3% 8% 0 8%;
+    @include md{
+        flex-wrap: nowrap;
+    }
+    
+    .img{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .bio{
+        width: 100%;
+        padding: 3% 0;
+        @include md{
+            padding: 3% 0;
+        }
+
+        h2{
+            font-size: 3rem;
+            font-family: "Dancing Script", cursive;
+            text-align: center;
+            @include md{
+                text-align: left;
+            }
+        }
+        .text{
+            text-align: justify;
+        }
+        .right{
+            @include md{
+                padding-left: 40px;
+            }
+        }
+        .left{
+            padding-top: 4%;
+            @include md{
+                padding-right: 40px;
+            }
+        }
+
+        button{
+            background-color: #fff;
+            margin-top: 3%;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            padding: 3px 6px;
+        
+        }
+        button:hover{
+            background-color:  rgb(243, 32, 145); 
+            color: #fff;
+            border: none;
+        }
+    }
+
+}
+
+.studio{
+    padding: 5% 8%;
+    flex-direction: column-reverse;
+    @include md {
+        flex-direction: row;
+        padding: 0 8%;
+
+    }
+}
