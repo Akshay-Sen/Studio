@@ -17,7 +17,7 @@
     }
     .bio{
         width: 100%;
-        padding: 3% 0;
+        padding: 4% 0;
         @include md{
             padding: 5% 0;
         }
@@ -46,29 +46,29 @@
         }
 
         button{
-            background-color: #fff;
+            background-color: rgb(243, 32, 145);
+            color: #fff;
             margin-top: 5%;
             border-radius: 5px;
             font-size: 1.1rem;
             padding: 3px 6px;
-            border: 2px solid black;
+            border: 2px solid rgb(243, 32, 145);
             @include md{
             margin-top: 3%;
             }
         
         }
         button:hover{
-            background-color:  rgb(243, 32, 145); 
-            color: #fff;
-            border: 2px solid rgb(243, 32, 145);
-
+            background-color:#fff; 
+            color: black;
+            border: 2px solid black;
         }
     }
 
 }
 
 .studio{
-    padding: 5% 8%;
+    padding: 7% 8%;
     flex-direction: column-reverse;
     @include md {
         flex-direction: row;
