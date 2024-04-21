@@ -32,6 +32,9 @@
         }
         .text{
             text-align: justify;
+            font-family: "Inter", sans-serif;
+            font-size: 1rem;
+            // font-weight: 500;
         }
         .right{
             @include md{
