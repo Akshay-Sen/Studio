@@ -12,20 +12,20 @@ const Header = () => {
     <nav className="navbar">
       <div className="container-1">
         <div className="logo">
-          <Link to = '/'><img src={logo} alt="" /></Link>
+          <Link to='/'><img src={logo} alt="" /></Link>
         </div>
-        <div className="menu-icon" onClick={()=> setShowNavbar(!showNavbar)} >
-        {
-                    showNavbar ? (
-                        <GrClose />
-                    ) : (
-                        <SlMenu />
-                    )
-                }
+        <div className="menu-icon" onClick={() => setShowNavbar(!showNavbar)} >
+          {
+            showNavbar ? (
+              <GrClose />
+            ) : (
+              <SlMenu />
+            )
+          }
           {/* <SlMenu /> */}
         </div>
         <div className={`nav-elements  ${showNavbar && 'active'}`}>
-          <ul onClick={()=> setShowNavbar(!showNavbar)}>
+          <ul onClick={() => setShowNavbar(!showNavbar)}>
             <li>
               <NavLink to="/">Home</NavLink>
             </li>

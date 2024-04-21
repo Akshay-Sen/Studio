@@ -46,6 +46,7 @@ body {
     list-style: none;
 }
 
+
 .nav-elements ul li:not(:last-child) {
     margin-right: 60px;
 }
@@ -55,6 +56,10 @@ body {
     font-weight: 600;
     color: black;
     text-decoration: none;
+}
+
+.nav-elements ul li{
+    padding-top: 8px;
 }
 
 .nav-elements ul a.active {
@@ -117,7 +122,9 @@ body {
         align-items: center;
         margin-top: 50px;
         width: 100%;
+        // padding-top: 8px;
     }
+   
 
     .nav-elements ul li a{
         font-size: 1.5rem;

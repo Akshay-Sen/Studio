@@ -19,7 +19,7 @@ function Home() {
       </a>
     </div>
 
-    <div id="carouselExampleFade" className="carousel slide carousel-fade " data-bs-ride="carousel" >
+    <div id="carouselExampleFade" className="carousel slide carousel-fade " data-bs-interval = "5000" data-bs-touch ="true" data-bs-ride="carousel" >
   <div className="carousel-inner ">
     <div className="carousel-item corousel-img  bg-img1 active ">
       {/* <img src={corousel1} className="d-block w-100  " alt="..."/> */}
